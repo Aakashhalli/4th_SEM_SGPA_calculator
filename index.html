@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Card Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Grade Card Calculator</h1>
+      <form id="gradeForm">
+        <h2>Internal Marks</h2>
+        <label
+          >Microcontroller: Programming and Interfacing (Out of 100):
+          <input type="number" id="mc" required
+        /></label>
+        <label
+          >Principle of Compiler Design (Out of 50):
+          <input type="number" id="icd" required
+        /></label>
+        <label
+          >Operating System (Out of 50): <input type="number" id="ios" required
+        /></label>
+        <label
+          >Exploratory Data Analysis (Out of 80):
+          <input type="number" id="ieda" required
+        /></label>
+        <label
+          >OOPs Lab (Out of 80): <input type="number" id="ioopsl" required
+        /></label>
+        <label
+          >OOPs Theory (Out of 50): <input type="number" id="ioopst" required
+        /></label>
+        <label
+          >Problem Solving & Analysis (Out of 100):
+          <input type="number" id="psa" required
+        /></label>
+        <label
+          >Applied Statistics With R (Out of 50):
+          <input type="number" id="iasr" required
+        /></label>
+
+        <h2>External Marks</h2>
+        <label
+          >Principle of Compiler Design (Out of 100):
+          <input type="number" id="ecd" required
+        /></label>
+        <label
+          >Operating System (Out of 100):
+          <input type="number" id="eos" required
+        /></label>
+        <label
+          >OOPs Theory (Out of 100): <input type="number" id="eoopst" required
+        /></label>
+        <label
+          >Applied Statistics With R (Out of 100):
+          <input type="number" id="easr" required
+        /></label>
+        <label
+          >Exploratory Data Analysis (Out of 20):
+          <input type="number" id="eeda" required
+        /></label>
+        <label
+          >OOPs Lab (Out of 20): <input type="number" id="eoopsl" required
+        /></label>
+
+        <button type="button" onclick="calculateSGPA()">Calculate SGPA</button>
+      </form>
+    </div>
+
+    <div id="result" class="full-screen" style="display: none">
+      <h2>Grade Card</h2>
+      <pre id="gradeCard"></pre>
+      <!-- <button onclick="downloadFile()">Download Grade Card</button> -->
+      <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

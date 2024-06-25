@@ -25,22 +25,22 @@ function calculateSGPA() {
   const tpsa = psa;
 
   const getGradePoint = (marks) => {
-    if (marks >= 90) return 10;
-    if (marks >= 80) return 9;
-    if (marks >= 70) return 8;
-    if (marks >= 60) return 7;
-    if (marks >= 50) return 6;
-    if (marks >= 40) return 5;
+    if (marks > 90) return 10;
+    if (marks > 80) return 9;
+    if (marks > 70) return 8;
+    if (marks > 60) return 7;
+    if (marks > 50) return 6;
+    if (marks > 40) return 5;
     return 0;
   };
 
   const getGrade = (marks) => {
-    if (marks >= 90) return "S";
-    if (marks >= 80) return "A";
-    if (marks >= 70) return "B";
-    if (marks >= 60) return "C";
-    if (marks >= 50) return "D";
-    if (marks >= 40) return "E";
+    if (marks > 90) return "S";
+    if (marks > 80) return "A";
+    if (marks > 70) return "B";
+    if (marks > 60) return "C";
+    if (marks > 50) return "D";
+    if (marks > 40) return "E";
     return "F";
   };
 
